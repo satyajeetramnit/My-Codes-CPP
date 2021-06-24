@@ -1,0 +1,49 @@
+#include<iostream>
+#include<climits>
+#include<cmath>
+#include<math.h>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the size of the array : "<<endl;
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements of the array :"<<endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    // int q = 1e6+2; //why not executable
+    int q=1000;
+    int index[q];
+
+    for(int i=0;i<q;i++){
+        index[i]=-1;
+    }
+
+    int minIndex=INT_MAX;
+
+    for(int i=0;i<n;i++)
+    {
+        if(index[arr[i]] != -1)
+        {
+            minIndex = min(minIndex,index[arr[i]]);
+        }
+        else
+        {
+            index[arr[i]]=i;
+        }
+        
+    }
+
+    if (minIndex == INT_MAX)
+    {
+        cout<<"-1"<<endl;
+    }
+    else
+    {
+        cout<<minIndex+1<<endl;
+    }
+
+    return 0;
+}
