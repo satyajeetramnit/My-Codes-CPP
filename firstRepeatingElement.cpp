@@ -47,3 +47,39 @@ int main(){
 
     return 0;
 }
+
+
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the size of the array : "<<endl;
+//     cin>>n;
+//     int arr[n];
+//     int q=INT_MIN;
+
+//     cout<<"Enter the elements of the array :"<<endl;
+//     for(int i=0;i<n;i++){
+//         cin>>arr[i];
+//         q=max(q,arr[i]);
+//     }
+
+//     int index[q+1]={};
+
+//     for(int i=0;i<n;i++){
+//         index[arr[i]]++;
+//     }
+
+//     for(int i=0;i<n;i++){
+//         if(index[arr[i]] > 1){
+//             cout<<i+1<<endl;
+//             return 0;
+//         }
+//     }
+
+//     cout<<"No repeating elements"<<endl;
+//     return 0;
+// }
+
