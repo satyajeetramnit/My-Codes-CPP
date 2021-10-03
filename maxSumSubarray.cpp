@@ -46,7 +46,7 @@ int main(){
 //     }
 
 
-//Prefix Sum Technique: Time Complexity: O(N2) Space Complexity: O(N)
+//Prefix Sum Technique: Time Complexity: O(N^2) Space Complexity: O(N)
     // int cumulativeSum[n+1];
     // cumulativeSum[0]=0;
     // for(int i=1;i<=n;i++){
