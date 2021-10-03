@@ -30,6 +30,20 @@ int main(){
 	 }
     cout<<"Maximum Subarray Sum is "<<maxSum<<endl;
 
+	
+	
+// 		Can also do this
+		
+//     int maxSubArray(vector<int>& nums) {
+//         int sum=0, maxSum=INT_MIN;
+//         for(auto it:nums) {
+//             sum += it;
+//             sum=max(it, sum);
+//             if(sum > maxSum)
+//                 maxSum=sum;
+//         }
+//         return maxSum;
+//     }
 
 
 //Prefix Sum Technique: Time Complexity: O(N2) Space Complexity: O(N)
