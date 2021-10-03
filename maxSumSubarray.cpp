@@ -24,6 +24,10 @@ int main(){
         }
         maxSum=max(currentSum,maxSum);
     }
+    if(MaxSum==0){ //if all the elements are -ve
+		 sort(arr,arr+n);
+		 MaxSum=arr[n-1];
+	 }
     cout<<"Maximum Subarray Sum is "<<maxSum<<endl;
 
 
